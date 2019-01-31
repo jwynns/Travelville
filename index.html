@@ -24,6 +24,7 @@
 	</head>
 
 	<body>
+		<!-- Navbar -->
 		<div class="navbar-fixed">
 			<nav class="teal">
 				<div class="container">
@@ -52,10 +53,58 @@
 			<li><a href="#contact">Contact</a></li>
 		</ul>
 
+		<!-- Section: Slider -->
+		<section class="slider">
+			<ul class="slides">
+				<li>
+					<img src="img/resort1" />
+					<!-- random image -->
+					<div class="caption center-align">
+						<h3>Take Your Dream Vacation!</h3>
+						<h5 class="light grey-text text-lighten-3 hide-on-small-only">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Inventore, officiis?
+						</h5>
+					</div>
+				</li>
+				<li>
+					<img src="img/resort2" />
+					<!-- random image -->
+					<div class="caption left-align">
+						<h3>We Work With All Budgets</h3>
+						<h5 class="light grey-text text-lighten-3 hide-on-small-only">
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam,
+							quod.
+						</h5>
+					</div>
+				</li>
+				<li>
+					<img src="img/resort3" />
+					<!-- random image -->
+					<div class="caption right-align">
+						<h3>Group & Individual Getaways</h3>
+						<h5 class="light grey-text text-lighten-3 hide-on-small-only">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							Inventore, similique.
+						</h5>
+					</div>
+				</li>
+			</ul>
+		</section>
+
 		<script>
 			// Sidenav
 			cont sideNav = document.querySelector('.sidenav');
 			M.Sidenav.init(sideNav, {});
+
+			// Slider
+			const slider = document.querySelector('slider');
+			M.slider.init(slider, {
+				indicators: false,
+				height: 500,
+				transition: 500,
+				interval: 6000
+			})
 		</script>
 
 		<!-- Compiled and minified JavaScript -->
