@@ -129,7 +129,22 @@
 				height: 500,
 				transition: 500,
 				interval: 6000
-			})
+			});
+
+			// Autocomplete
+			const ac = document.querySelector('.autocomplete');
+			M.Autocomplete.init(ac, {
+				data: {
+					"Aruba": null,
+					"Cancun": null,
+					"Hawaii": null,
+					"Florida": null,
+					"California": null,
+					"Jamaica": null,
+					"Europe": null,
+				}
+
+			});
 		</script>
 
 		<!-- Compiled and minified JavaScript -->
